@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+
+padding-top: 20px;
+padding-right: 100px;
+padding-left: 100px;
+
+}
+
+.logo {
+    width: 100px;
+    transition: 0.5s;      /* Largura */
+}
+
+.copao {
+    width: 300px; 
+    transition: 0.5s;     
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.caixa-texto {
+   width: 600px;
+
+}
+h1{
+    color: #333;
+    font-size: 60px; /* Tamanho da fonte */
+    font-weight: bold; /*grossura da fonte*/
+}
+
+span {
+    color: #017143;
+    font-size: 70px;
+    font-weight: 900;
+    transition: 0.5s;
+}
+
+p {
+    font-size: 16px;
+}
+button {
+   background: #017143;
+   color: white;
+   border-radius: 40px; /*bordas arredondadas*/
+   padding: 10px; /*espaçamento interno*/
+   border: none;
+   margin-top: 20px;
+   cursor: pointer; /*muda o cursor ao passar por cima*/
+   transition: 0.5s;
+}
+
+button:hover{
+    background: #005137;
+}
+
+.caixa-imagem{
+
+    display: flex;
+    justify-content: flex-end;
+    width: 600px;
+    margin-top: 100px;
+}
+
+.starbucks{
+    width: 340px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
+
+.botao-menu{
+    width: 60px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botao-menu:hover{
+    transform: translateY(-20px)
+
+}
+
+.copao:hover{
+    transform: translateY(-20px);
+}
+
+.logo:hover{
+    transform: translateY(20px);
+}
+
+h1 {
+    transition: color 0.3s ease;
+}
+
+h1 span {
+    transition: color 0.3s ease;
+}
+
+/* quando passar o mouse no h1 */
+h1:hover {
+    color: green;
+}
+
+h1:hover span {
+    color: green;
+}
+
+.circulo{
+    background: #017143;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: circle(600px at right 800px);  z-index: -1;
+}
