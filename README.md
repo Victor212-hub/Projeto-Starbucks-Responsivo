@@ -12,7 +12,7 @@ O objetivo principal foi treinar:
 
 ---
 
-## 🚀 Funcionalidades
+# Funcionalidades
 
 * Troca dinâmica da imagem do produto
 * Alteração da cor de fundo conforme o copo selecionado
