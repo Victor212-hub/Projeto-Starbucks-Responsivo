@@ -6,23 +6,17 @@
 }
 
 body{
-
-padding-top: 20px;
-padding-right: 100px;
-padding-left: 100px;
-
+    padding: 2vh 5vw;
 }
 
+/* LOGO */
 .logo {
-    width: 100px;
-    transition: 0.5s;      /* Largura */
+    width: 8vw;
+    min-width: 80px;
+    transition: 0.5s;
 }
 
-.copao {
-    width: 300px; 
-    transition: 0.5s;     
-}
-
+/* CONTEÚDO PRINCIPAL */
 .conteudo {
     display: flex;
     align-items: center;
@@ -30,94 +24,79 @@ padding-left: 100px;
     width: 100%;
 }
 
+/* TEXTO */
 .caixa-texto {
-   width: 600px;
-
+   width: 50%;
 }
+
 h1{
     color: #333;
-    font-size: 60px; /* Tamanho da fonte */
-    font-weight: bold; /*grossura da fonte*/
+    font-size: 4vw;
 }
 
 span {
     color: #017143;
-    font-size: 70px;
+    font-size: 4.5vw;
     font-weight: 900;
-    transition: 0.5s;
 }
 
 p {
-    font-size: 16px;
+    font-size: 1.2vw;
 }
+
 button {
    background: #017143;
    color: white;
-   border-radius: 40px; /*bordas arredondadas*/
-   padding: 10px; /*espaçamento interno*/
+   border-radius: 40px;
+   padding: 1vh 2vw;
    border: none;
-   margin-top: 20px;
-   cursor: pointer; /*muda o cursor ao passar por cima*/
+   margin-top: 2vh;
+   cursor: pointer;
    transition: 0.5s;
 }
 
-button:hover{
-    background: #005137;
-}
-
+/* IMAGEM */
 .caixa-imagem{
-
     display: flex;
     justify-content: flex-end;
-    width: 600px;
-    margin-top: 100px;
+    width: 50%;
 }
 
-.starbucks{
-    width: 340px;
+.copao {
+    width: 25vw;
+    max-width: 300px;
+    transition: 0.5s;
 }
 
+/* MENU */
 .menu{
     display: flex;
     justify-content: center;
+    margin-top: 3vh;
+    gap: 2vw;
 }
 
 .botao-menu{
-    width: 60px;
+    width: 5vw;
+    min-width: 50px;
     cursor: pointer;
     transition: 0.5s;
 }
 
+/* HOVERS */
 .botao-menu:hover{
-    transform: translateY(-20px)
-
+    transform: translateY(-2vh);
 }
 
 .copao:hover{
-    transform: translateY(-20px);
+    transform: translateY(-2vh);
 }
 
 .logo:hover{
-    transform: translateY(20px);
+    transform: translateY(2vh);
 }
 
-h1 {
-    transition: color 0.3s ease;
-}
-
-h1 span {
-    transition: color 0.3s ease;
-}
-
-/* quando passar o mouse no h1 */
-h1:hover {
-    color: green;
-}
-
-h1:hover span {
-    color: green;
-}
-
+/* FUNDO */
 .circulo{
     background: #017143;
     width: 100%;
@@ -125,5 +104,49 @@ h1:hover span {
     position: absolute;
     top: 0;
     left: 0;
-    clip-path: circle(600px at right 800px);  z-index: -1;
+    clip-path: circle(40vw at right 20vh);
+    z-index: -1;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px){
+
+    .conteudo{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .caixa-texto{
+        width: 100%;
+    }
+
+    .caixa-imagem{
+        width: 100%;
+        justify-content: center;
+        margin-top: 5vh;
+    }
+
+    h1{
+        font-size: 8vw;
+    }
+
+    span{
+        font-size: 9vw;
+    }
+
+    p{
+        font-size: 3.5vw;
+    }
+
+    .copao{
+        width: 50vw;
+    }
+
+    .botao-menu{
+        width: 12vw;
+    }
+
+    .logo{
+        width: 20vw;
+    }
 }
