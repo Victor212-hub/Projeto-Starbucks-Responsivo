@@ -42,19 +42,7 @@ O projeto apresenta:
 
 # Como executar o projeto
 
-1. Baixe ou clone este repositório:
-
-```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-```
-
-2. Abra o arquivo:
-
-```bash
-index.html
-```
-
-3. Execute diretamente no navegador
+1. Cole no navegador: https://victor212-hub.github.io/Projeto-Starbucks-Responsivo/
 
 ---
 
